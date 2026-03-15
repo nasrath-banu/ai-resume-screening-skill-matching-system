@@ -28,3 +28,6 @@ and matches them with job roles using machine learning techniques.
 ## How to Run
 pip install -r requirements.txt
 streamlit run app.py
+
+## Live Demo Link
+https://ai-resume-screening-skill-matching-system-n5fukjysvnt4dfd6by8a.streamlit.app/
