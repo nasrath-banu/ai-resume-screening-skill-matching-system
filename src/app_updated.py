@@ -47,22 +47,91 @@ def hybrid_score(skill_score, tfidf_score, w1=0.7, w2=0.3):
 ROLE_SKILLS = {
     "data analyst": [
         "python", "sql", "excel", "power bi", "tableau",
-        "numpy", "pandas", "statistics", "data visualization","data mining"
+        "numpy", "pandas", "statistics", "data visualization", "data mining",
+        "mysql", "postgresql", "r", "looker", "google analytics",
+        "etl", "data cleaning", "pivot tables", "vlookup", "dashboard",
+        "business intelligence", "reporting", "data wrangling", "snowflake", "spark"
     ],
     "web developer": [
-        "html", "css", "javascript", "react",
-        "node", "mongodb", "express"
+        "html", "css", "javascript", "react", "node", "mongodb", "express",
+        "typescript", "angular", "vue", "nextjs", "rest api", "graphql",
+        "git", "github", "bootstrap", "tailwind", "php", "mysql",
+        "redux", "webpack", "docker", "aws", "firebase", "responsive design"
     ],
     "machine learning engineer": [
-        "python", "numpy", "pandas",
-        "scikit learn", "tensorflow", "machine learning","pytorch"
-        ,"docker","deep learning","NLP","tensorflow"
+        "python", "numpy", "pandas", "scikit learn", "tensorflow",
+        "machine learning", "pytorch", "docker", "deep learning", "nlp",
+        "xgboost", "lightgbm", "keras", "mlops", "feature engineering",
+        "model deployment", "aws", "azure", "pyspark", "computer vision",
+        "regression", "classification", "clustering", "random forest", "neural networks"
     ],
-    "ai enginner":[
-        "generative ai","python","java","c++","advanced mathematics","LLM","prompt engineering","langchain","cnn","rnn","gan"
+    "ai engineer": [
+        "generative ai", "python", "java", "c++", "advanced mathematics",
+        "llm", "prompt engineering", "langchain", "cnn", "rnn", "gan",
+        "openai", "hugging face", "transformer", "bert", "gpt",
+        "vector database", "rag", "fine tuning", "embeddings",
+        "fastapi", "mlflow", "reinforcement learning", "multimodal ai", "llama"
     ],
-    "data scientist":[
-        "statistics","python","machine learning","regression","classification","nlp","xgboost","power bi","seaborn","matplotlib","hadoop"
+    "data scientist": [
+        "statistics", "python", "machine learning", "regression", "classification",
+        "nlp", "xgboost", "power bi", "seaborn", "matplotlib", "hadoop",
+        "numpy", "pandas", "scikit learn", "deep learning", "tensorflow",
+        "pytorch", "sql", "r", "hypothesis testing", "a b testing",
+        "feature engineering", "data wrangling", "pyspark", "tableau", "clustering"
+    ],
+    "software engineer": [
+        "python", "java", "c++", "c#", "golang", "rust",
+        "data structures", "algorithms", "rest api", "microservices",
+        "spring boot", "django", "fastapi", "postgresql", "redis",
+        "docker", "kubernetes", "git", "ci cd", "unit testing",
+        "system design", "oop", "linux", "kafka", "rabbitmq"
+    ],
+    "devops engineer": [
+        "docker", "kubernetes", "jenkins", "git", "github actions",
+        "aws", "azure", "gcp", "terraform", "ansible",
+        "linux", "bash", "ci cd", "monitoring", "prometheus",
+        "grafana", "nginx", "helm", "cloudformation", "argocd",
+        "security", "networking", "python", "elk stack", "vault"
+    ],
+    "cybersecurity analyst": [
+        "network security", "penetration testing", "ethical hacking", "siem",
+        "firewalls", "vulnerability assessment", "python", "linux",
+        "wireshark", "metasploit", "nmap", "ids ips", "encryption",
+        "iso 27001", "owasp", "soc", "threat analysis", "incident response",
+        "splunk", "burp suite", "kali linux", "zero trust", "malware analysis"
+    ],
+    "business analyst": [
+        "requirement gathering", "sql", "excel", "power bi", "tableau",
+        "stakeholder management", "brd", "uml", "jira", "confluence",
+        "agile", "scrum", "data analysis", "process mapping", "wireframing",
+        "business intelligence", "gap analysis", "user stories", "ms visio", "reporting"
+    ],
+    "ui ux designer": [
+        "figma", "adobe xd", "sketch", "prototyping", "wireframing",
+        "user research", "usability testing", "information architecture",
+        "interaction design", "typography", "color theory", "design systems",
+        "invision", "zeplin", "html", "css", "accessibility",
+        "user journey", "a b testing", "responsive design"
+    ],
+    "product manager": [
+        "product roadmap", "agile", "scrum", "jira", "confluence",
+        "stakeholder management", "user stories", "market research",
+        "product strategy", "kpi", "okr", "a b testing", "sql",
+        "data analysis", "wireframing", "figma", "go to market",
+        "competitive analysis", "prioritization", "product lifecycle"
+    ],
+    "database administrator": [
+        "sql", "mysql", "postgresql", "oracle", "sql server",
+        "mongodb", "redis", "database design", "indexing", "query optimization",
+        "backup recovery", "replication", "partitioning", "nosql", "cassandra",
+        "performance tuning", "stored procedures", "triggers", "etl", "data warehousing"
+    ],
+    "full stack developer": [
+        "html", "css", "javascript", "react", "angular", "vue",
+        "node", "express", "python", "django", "rest api", "graphql",
+        "mongodb", "postgresql", "mysql", "docker", "git", "aws",
+        "typescript", "redux", "nextjs", "ci cd", "microservices",
+        "tailwind", "bootstrap", "firebase", "linux", "nginx"
     ]
 }
 
